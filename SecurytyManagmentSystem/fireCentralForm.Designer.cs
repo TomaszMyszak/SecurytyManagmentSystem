@@ -35,8 +35,8 @@
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.objGBX = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.zdarzBTN = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +49,7 @@
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Parter";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -59,6 +60,7 @@
             this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "I pietro";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -69,6 +71,7 @@
             this.checkBox3.TabIndex = 3;
             this.checkBox3.Text = "Hala prod I";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -109,6 +112,15 @@
             this.objGBX.TabStop = false;
             this.objGBX.Text = "Wybierz Objekt";
             // 
+            // zdarzBTN
+            // 
+            this.zdarzBTN.Location = new System.Drawing.Point(662, 12);
+            this.zdarzBTN.Name = "zdarzBTN";
+            this.zdarzBTN.Size = new System.Drawing.Size(267, 59);
+            this.zdarzBTN.TabIndex = 9;
+            this.zdarzBTN.Text = "Raport Zdarzeń";
+            this.zdarzBTN.UseVisualStyleBackColor = true;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -122,15 +134,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            // 
-            // zdarzBTN
-            // 
-            this.zdarzBTN.Location = new System.Drawing.Point(662, 12);
-            this.zdarzBTN.Name = "zdarzBTN";
-            this.zdarzBTN.Size = new System.Drawing.Size(267, 59);
-            this.zdarzBTN.TabIndex = 9;
-            this.zdarzBTN.Text = "Raport Zdarzeń";
-            this.zdarzBTN.UseVisualStyleBackColor = true;
             // 
             // fireCentralForm
             // 

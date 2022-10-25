@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CCTV
 {
-    public partial class Form1 : Form
+    public partial class cctvIev : Form
     {
-        public Form1()
+        public cctvIev()
         {
             InitializeComponent();
         }

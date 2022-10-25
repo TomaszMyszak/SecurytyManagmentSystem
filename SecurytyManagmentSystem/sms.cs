@@ -47,8 +47,12 @@ namespace SecurytyManagmentSystem
 
           
         }
-        
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fireCentralForm openForm2 = new fireCentralForm();
+            openForm2.Show();
+        }
     }
 }
 

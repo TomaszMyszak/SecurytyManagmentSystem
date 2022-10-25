@@ -1,6 +1,6 @@
 ﻿namespace CCTV
 {
-    partial class Form1
+    partial class cctvIev
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // cctvIev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(945, 623);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "cctvIev";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "CCTV";
             this.ResumeLayout(false);
 
         }

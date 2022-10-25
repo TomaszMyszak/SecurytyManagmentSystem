@@ -63,9 +63,49 @@ namespace SecurytyManagmentSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap biurowiec {
+            get {
+                object obj = ResourceManager.GetObject("biurowiec", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap budTechniczny {
+            get {
+                object obj = ResourceManager.GetObject("budTechniczny", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calosc {
+            get {
+                object obj = ResourceManager.GetObject("calosc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap zdjecieGlowne {
             get {
                 object obj = ResourceManager.GetObject("zdjecieGlowne", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zdjecieGlowne1 {
+            get {
+                object obj = ResourceManager.GetObject("zdjecieGlowne1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
