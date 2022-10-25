@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{19F59324-2C78-423D-A950-FDD28AD1E3C6}</ProjectGuid>
+    <ProjectGuid>{43DDA568-D138-4075-B5E8-040487CF1C42}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SecurytyManagmentSystem</RootNamespace>
-    <AssemblyName>SecurytyManagmentSystem</AssemblyName>
+    <RootNamespace>CCTV</RootNamespace>
+    <AssemblyName>CCTV</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,32 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fireCentralForm.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fireCentralForm.Designer.cs">
-      <DependentUpon>fireCentralForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="sms.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="sms.Designer.cs">
-      <DependentUpon>sms.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WetherInfo.cs" />
-    <EmbeddedResource Include="fireCentralForm.resx">
-      <DependentUpon>fireCentralForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="sms.en-US.resx">
-      <DependentUpon>sms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="sms.pl-PL.resx">
-      <DependentUpon>sms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="sms.resx">
-      <DependentUpon>sms.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,9 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -99,19 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\pogoda\pogoda\pogoda.csproj">
-      <Project>{836b08b6-f120-4305-b255-5deacd5196a1}</Project>
-      <Name>pogoda</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="images\biurowiec.png" />
-    <Content Include="images\budTechniczny.png" />
-    <Content Include="images\calosc.png" />
-    <Content Include="images\zdjecieGlowne.png" />
-    <None Include="Resources\zdjecieGlowne.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

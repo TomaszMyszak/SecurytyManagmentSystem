@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurytyManagmentSystem", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pogoda", "..\pogoda\pogoda\pogoda.csproj", "{836B08B6-F120-4305-B255-5DEACD5196A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCTV", "CCTV\CCTV.csproj", "{43DDA568-D138-4075-B5E8-040487CF1C42}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SMSDataSql", "SMSDataSql\SMSDataSql.sqlproj", "{16A975BA-49DC-46B8-8399-82107A9636DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,16 @@ Global
 		{836B08B6-F120-4305-B255-5DEACD5196A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{836B08B6-F120-4305-B255-5DEACD5196A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{836B08B6-F120-4305-B255-5DEACD5196A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43DDA568-D138-4075-B5E8-040487CF1C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DDA568-D138-4075-B5E8-040487CF1C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DDA568-D138-4075-B5E8-040487CF1C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DDA568-D138-4075-B5E8-040487CF1C42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A975BA-49DC-46B8-8399-82107A9636DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A975BA-49DC-46B8-8399-82107A9636DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A975BA-49DC-46B8-8399-82107A9636DB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{16A975BA-49DC-46B8-8399-82107A9636DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A975BA-49DC-46B8-8399-82107A9636DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A975BA-49DC-46B8-8399-82107A9636DB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

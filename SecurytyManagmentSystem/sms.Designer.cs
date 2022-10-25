@@ -35,22 +35,22 @@
             this.btn_cctv = new System.Windows.Forms.Button();
             this.btn_DoorControl = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gB_weather = new System.Windows.Forms.GroupBox();
-            this.gB_Alarm = new System.Windows.Forms.GroupBox();
-            this.gB_Task = new System.Windows.Forms.GroupBox();
-            this.picIcon = new System.Windows.Forms.PictureBox();
-            this.labConditions = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.labConditions = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.labTemp = new System.Windows.Forms.Label();
-            this.labPressure = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.labWindSpeed = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.labPressure = new System.Windows.Forms.Label();
+            this.gB_Alarm = new System.Windows.Forms.GroupBox();
+            this.gB_Czujniki = new System.Windows.Forms.GroupBox();
+            this.picIcon = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gB_weather.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -70,6 +70,7 @@
             // btn_cctv
             // 
             resources.ApplyResources(this.btn_cctv, "btn_cctv");
+            this.btn_cctv.FlatAppearance.BorderSize = 2;
             this.btn_cctv.Name = "btn_cctv";
             this.btn_cctv.UseVisualStyleBackColor = true;
             // 
@@ -84,13 +85,6 @@
             resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::SecurytyManagmentSystem.Properties.Resources.zdjecieGlowne;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
             // 
             // gB_weather
             // 
@@ -107,24 +101,12 @@
             this.gB_weather.Name = "gB_weather";
             this.gB_weather.TabStop = false;
             // 
-            // gB_Alarm
+            // label7
             // 
-            resources.ApplyResources(this.gB_Alarm, "gB_Alarm");
-            this.gB_Alarm.Name = "gB_Alarm";
-            this.gB_Alarm.TabStop = false;
-            // 
-            // gB_Task
-            // 
-            resources.ApplyResources(this.gB_Task, "gB_Task");
-            this.gB_Task.Name = "gB_Task";
-            this.gB_Task.TabStop = false;
-            // 
-            // picIcon
-            // 
-            this.picIcon.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.picIcon, "picIcon");
-            this.picIcon.Name = "picIcon";
-            this.picIcon.TabStop = false;
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Name = "label7";
             // 
             // labConditions
             // 
@@ -133,33 +115,12 @@
             this.labConditions.ForeColor = System.Drawing.Color.Black;
             this.labConditions.Name = "labConditions";
             // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Name = "label7";
-            // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Name = "label2";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Name = "label3";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Name = "label5";
             // 
             // labTemp
             // 
@@ -168,12 +129,19 @@
             this.labTemp.ForeColor = System.Drawing.Color.Black;
             this.labTemp.Name = "labTemp";
             // 
-            // labPressure
+            // label5
             // 
-            resources.ApplyResources(this.labPressure, "labPressure");
-            this.labPressure.BackColor = System.Drawing.Color.Transparent;
-            this.labPressure.ForeColor = System.Drawing.Color.Black;
-            this.labPressure.Name = "labPressure";
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Name = "label5";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Name = "label3";
             // 
             // labWindSpeed
             // 
@@ -182,12 +150,45 @@
             this.labWindSpeed.ForeColor = System.Drawing.Color.Black;
             this.labWindSpeed.Name = "labWindSpeed";
             // 
+            // labPressure
+            // 
+            resources.ApplyResources(this.labPressure, "labPressure");
+            this.labPressure.BackColor = System.Drawing.Color.Transparent;
+            this.labPressure.ForeColor = System.Drawing.Color.Black;
+            this.labPressure.Name = "labPressure";
+            // 
+            // gB_Alarm
+            // 
+            resources.ApplyResources(this.gB_Alarm, "gB_Alarm");
+            this.gB_Alarm.Name = "gB_Alarm";
+            this.gB_Alarm.TabStop = false;
+            // 
+            // gB_Czujniki
+            // 
+            resources.ApplyResources(this.gB_Czujniki, "gB_Czujniki");
+            this.gB_Czujniki.Name = "gB_Czujniki";
+            this.gB_Czujniki.TabStop = false;
+            // 
+            // picIcon
+            // 
+            this.picIcon.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.picIcon, "picIcon");
+            this.picIcon.Name = "picIcon";
+            this.picIcon.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::SecurytyManagmentSystem.Properties.Resources.zdjecieGlowne;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // sms
             // 
             this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gB_Task);
+            this.Controls.Add(this.gB_Czujniki);
             this.Controls.Add(this.gB_Alarm);
             this.Controls.Add(this.gB_weather);
             this.Controls.Add(this.button1);
@@ -197,10 +198,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "sms";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gB_weather.ResumeLayout(false);
             this.gB_weather.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -215,7 +216,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox gB_weather;
         private System.Windows.Forms.GroupBox gB_Alarm;
-        private System.Windows.Forms.GroupBox gB_Task;
+        private System.Windows.Forms.GroupBox gB_Czujniki;
         private System.Windows.Forms.PictureBox picIcon;
         private System.Windows.Forms.Label labConditions;
         private System.Windows.Forms.Label label7;
